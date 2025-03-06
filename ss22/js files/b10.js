@@ -39,22 +39,22 @@ switch(choice){
         }
         break;
     case 2:
-        // for(let element of arr){
-        //     console.log(element)
-        // }
+        for(let element of arr){
+            console.log(element)
+        }
         alert(arr)
         break;
     case 3:
-        let location = +prompt(`Moi nhap vi tri muon them: `)
+        let location = +prompt(`Moi nhap vi tri muon them (nhap dung chi so): `)
         if(isNaN(location) || location<0 || location>arr.length){
             alert(`vi tri khong hop le`)
         }else{
-            let newElement = prompt(`Moi nhap phan tu moi: `)
+            let newElement = prompt(`Moi nhap phan tu moi (nhap dung chi so): `)
             arr.splice(location,0,newElement)
         }
         break
     case 4:
-        let location2 = +prompt(`Moi nhap vi tri muon sua: `)
+        let location2 = +prompt(`Moi nhap vi tri muon sua (nhap dung chi so): `)
         if(isNaN(location2) || location2<0 || location2>=arr.length){
             alert(`vi tri khong hop le`)
         }else{
@@ -62,7 +62,7 @@ switch(choice){
         }
         break
     case 5:
-        let location3 = +prompt(`Moi nhap vi tri muon xoa: `)
+        let location3 = +prompt(`Moi nhap vi tri muon xoa (nhap dung chi so): `)
         if(isNaN(location3) || location3<0 || location3>arr.length){
             alert(`vi tri khong hop le`)
         }else{

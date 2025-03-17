@@ -1,5 +1,27 @@
 let choice;
-let books = [];
+let books = [
+    {
+        id: 1,
+        title: "Lua dao",
+        author: "Dang Viet",
+        price: 200,
+        isAvailable: true,
+    },
+    {
+        id: 2,
+        title: "lam giau",
+        author: "Dinh thanh",
+        price: 400,
+        isAvailable: false,
+    },
+    {
+        id: 3,
+        title: "lam ngheo",
+        author: "Dinh thanh fake",
+        price: 330,
+        isAvailable: false,
+    }
+];
 while (choice !== 7) {
   choice = +prompt(`1.Thêm sách mới.
 2.Hiển thị danh sách sách.
@@ -109,17 +131,12 @@ function statusUpdate(){
     let check = false
     books.forEach(function(element, index){
         if(element.id === id){
-            if(element.isAvailable == true){
-                element.isAvailable = false
-            }else{
-                element.isAvailable = true
-            }
+            element.isAvailable = !element.isAvailable
             alert(`
                 Da cap nhat trang thai sach!
                 =========================
                 ID : ${element.id}
                 Is Available : ${element.isAvailable}
-                }
             `)
               check = true
         }
@@ -154,4 +171,15 @@ function sortByPrice(){
         console.log(`=========================`)
     })
     alert(`Danh sach sach da duoc sap xep va hien thi tren man hinh console!`)
+}
+
+function search(key,value){
+    let findIndex=-1
+    for(let i in library){
+        if(value === library[i][key]){
+            findIndex = i
+            break
+        }
+    }
+    return findIndex
 }

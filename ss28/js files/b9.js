@@ -51,6 +51,7 @@ function addBooks(){
         }
         let title = prompt(`Moi nhap ten sach: `);
         let author = prompt(`Moi nhap ten tac gia: `);
+        let year = +prompt(`Moi nhap nam xuat ban cua sach: `);
         let price = parseFloat(prompt(`Moi nhap gia sach: `))
             let isAvailable = +prompt(`Moi nhap trang thai muon sach:
             1.True
@@ -66,7 +67,7 @@ function addBooks(){
                 continue
             }
         
-        books.push({id, title, author, price, isAvailable})
+        books.push({id, title, author,year, price, isAvailable})
       }
 }
 function dislayBooks(){
@@ -74,6 +75,7 @@ function dislayBooks(){
         console.log(`      ID : ${book.id}`)
         console.log(`Title : ${book.title}`)
         console.log(`Author : ${book.author}`)
+        console.log(`Year : ${book.year}`)
         console.log(`Price : ${book.price}`)
         console.log(`Is Available : ${book.isAvailable}`)
         console.log(`=========================`)
@@ -90,6 +92,7 @@ function findBook(){
                 ID : ${element.id}
                 Title : ${element.title}
                 Author : ${element.author}
+                Year : ${element.year}
                 Price : ${element.price}
                 Is Available : ${element.isAvailable}
                 =========================
@@ -145,6 +148,7 @@ function sortByPrice(){
         console.log(`      ID : ${book.id}`)
         console.log(`Title : ${book.title}`)
         console.log(`Author : ${book.author}`)
+        console.log(`Year : ${book.year}`)
         console.log(`Price : ${book.price}`)
         console.log(`Is Available : ${book.isAvailable}`)
         console.log(`=========================`)

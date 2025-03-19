@@ -1,0 +1,16 @@
+.box{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 15px;
+    border: 2px solid black;
+}
+#green{
+    background-color: green !important;
+}
+#red{
+    background-color: red !important;
+}
+#purple{
+    background-color: purple !important;
+}

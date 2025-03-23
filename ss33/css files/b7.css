@@ -1,0 +1,158 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin-left: 550px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 640px;
+    margin-left: 300px;
+}
+img{
+    width: 260px;
+    height: 150px;
+    object-fit: cover
+}
+.item{
+    padding: 15px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    border: 1px solid rgb(234, 235, 234);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.item:hover{
+    transform: scale(1.1);
+}
+.name {
+    font-weight: bold;
+    font-size: 17px;
+ 
+    height: 20px;
+}
+.price{
+ 
+    height: 20px;  
+    color: rgb(215, 31, 3);
+    font-weight: 600;
+}
+.add{
+    padding: 5px;
+    color: white !important;
+    background-color: rgb(3, 172, 3);
+    border: none;
+    height: 33px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.transact {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    
+    position: fixed;
+    /* bottom: 420px; */
+    top: 100px;
+    left: 980px;
+    
+}
+
+.title{
+   font-size: 28px;
+   font-weight: 600;
+   text-align: center;
+   margin-bottom: 20px; 
+}
+
+.status {
+    font-size: 15px;
+    margin-top: 40px;
+    color: gray;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* .status{
+    display: none; 
+} */
+
+hr{
+    border: 1px solid rgb(228, 228, 228);
+}
+.cart {
+    display: none;
+}
+.cart{
+    margin-bottom: 10px;
+}
+.cart .itemName {
+    font-weight: bold;
+}
+
+.cart .itemPrice {
+    color: red;
+    font-size: 16px;
+}
+
+.interact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.interact button {
+    border: none;
+    background: gray;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.interact .del {
+    background: red;
+}
+.interact .in {
+    background: rgb(4, 192, 19);
+}
+.interact .de {
+    background: rgb(4, 192, 19);
+}
+
+.total {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.buy {
+    width: 100%;
+    padding: 10px;
+    background: rgb(68, 96, 239);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy:hover {
+    background: darkblue;
+}

@@ -1,0 +1,21 @@
+div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid rgb(236, 235, 235);
+    border-radius: 8px;
+    width: 300px;
+    height: 30px;
+    padding: 8px;
+}
+input{
+    height: 20px;
+    width: 240px;
+    border: none;
+}
+i{
+    color: gray;
+}
+i:hover{
+    transform: scale(1.1);
+}

@@ -176,9 +176,8 @@ buyBtn.addEventListener("click", function () {
     alert(`
             Cảm ơn bạn đã mua hàng! 
             Tổng giá trị đơn hàng: ${total.toLocaleString()} đ`);
-        cart.forEach(function (item, index) {
-            cart.splice(index, 1)
-           })
+       cart.length = 0
+    
            updateCart();
   }
 });

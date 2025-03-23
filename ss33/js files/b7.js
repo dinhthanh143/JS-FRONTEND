@@ -112,6 +112,7 @@ function updateCart() {
       cartContainer.innerHTML += `
                   <div class="cart-item">
                       <span class="itemName">${item.name}</span>
+                      <br>
                       <span class="itemPrice">${item.price.toLocaleString()} đ x <span class="quantity">${
         item.quantity
       }</span></span>

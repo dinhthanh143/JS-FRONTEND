@@ -14,6 +14,23 @@ let dataCheck =document.querySelectorAll(".dataCheck")
 
 let filteredDatas = []
 
+searchName.addEventListener("keydown", function(event){  
+let value = searchName.value
+value = value.toLowerCase()
+if(event.key==="Enter"){
+  if(value===""){
+    alert(`Tìm kiếm không được để trống!`)
+  }else{
+    filteredDatas.length = 0
+    filteredDatas = datas.filter(function(data){
+      return data.name.toLowerCase() == value
+    })
+    displayFilteredDatas()
+  }
+}
+})
+
+
 filterStatus.addEventListener("change",function(){
   filteredDatas.length = 0
   if(this.value ==="all"){

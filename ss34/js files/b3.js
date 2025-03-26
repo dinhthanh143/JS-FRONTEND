@@ -15,7 +15,7 @@ if (password === "" && email === "" ) {
     emails.forEach(function(comEmail){
         if(comEmail.email === email && comEmail.password === password){
             alert(`Dang nhap thanh cong`)
-            
+            window.location.href = "http://google.com"
             check = false
         }
     })

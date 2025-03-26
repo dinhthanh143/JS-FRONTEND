@@ -1,0 +1,140 @@
+
+body{
+    background-color: #ac82ef ;
+    background: linear-gradient(to bottom, #ac82ef,rgb(85, 3, 180));
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+   height: 100vh;
+     backdrop-filter: blur(5px); 
+}
+.overlay{
+    background-color: #634a88 !important;
+    background: none;
+}
+.container{
+    width: 500px;
+   gap: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add{
+    
+    height: 55px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.577);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.toLink{
+    padding-left: 15px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.579);
+    color: white;
+    cursor: pointer;
+    padding-right: 30px;
+}
+.toLink:hover{
+    transform: scale(1.1);
+}
+
+.del{
+    color: white;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.del:hover{
+    color: red;
+    transform: scale(1.2);
+}
+.websites{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+.addContainer{
+  
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 220px;
+    width: 380px;
+    
+    justify-content: center;
+    background-color: white;
+    gap: 15px !important;
+    
+}
+
+.addContainer span{
+    padding: 8px;
+    height: 35px;
+    color: white;
+    background-color: #7b59b0;
+}
+.cancel{
+    margin-left: 230px;
+    background: transparent;
+    border: none;
+    font-weight: 800;
+    
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+.cancel:hover{
+    transform: scale(1.1);
+}
+input{
+    width: 80%;
+    align-self: center;
+    border-radius: 3px;
+    border: 2px solid #7b59b0;
+}
+label{
+    margin-top: 5px;
+    color: #7b59b0;
+    margin-left: 30px;
+}
+.save{
+    width: 20%;
+    height: 30px;
+    border: none;
+    background-color: #7b59b0;
+    margin-left: 30px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.save:hover{
+    transform: scale(1.1);
+}
+.hide{
+    display: none;
+}
+img{
+    width: 25px !important;
+    height: 25px !;
+}
+.magic{
+    transition: 1s ease;
+    transform: scale(1.2);
+}

@@ -8,7 +8,6 @@ if(check == null){
     title.innerText = `Nhập tên của bạn`
     inputName.classList.remove('hide')
     save.classList.remove('hide')
-   
 }else{
     title.innerText = `👋 Chào bạn, ${name}`
     inputName.classList.add('hide')
@@ -26,7 +25,7 @@ save.onclick = function(){
     save.classList.toggle('hide')
     change.classList.toggle('hide')
     check = true
-    localStorage.setItem('36_1_check', JSON.stringify(check)) 
+  localStorage.setItem('36_1_check', JSON.stringify(check)) 
    localStorage.setItem('ss36_b1', JSON.stringify(name)) 
   }
 }

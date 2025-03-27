@@ -3,7 +3,7 @@ let body = document.getElementsByTagName("body")[0];
 let current = JSON.parse(localStorage.getItem("ss36_b4"))
 if(current == "light"){
     body.classList.remove("dark-mode");
-}else{
+}else if(current == "dark"){
     body.classList.add("dark-mode");
 }
 

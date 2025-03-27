@@ -30,7 +30,6 @@ sendButton.addEventListener("click", function () {
     alert("Bình luận không được trống");
     return;
   }
-
   let newComment = { rating: selectedRating, text: commentText };
   comments.push(newComment);
   localStorage.setItem("ss36_b6", JSON.stringify(comments));
